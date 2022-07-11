@@ -1,24 +1,28 @@
-# ÖDEV 1
+# INSERTION SORT PROJESİ 1
+## Proje 1 
+### [22,27,16,2,18,6] -> Insertion Sort 
+1.Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
 
-## GitHub'ta Repo İşlemleri
-Şu ana kadar bir sürü konu gördük ve birçok proje üzerinde çalıştık. Peki bu projeleri nasıl takip edeceğiz, nasıl derli toplu şekilde tutacağız? İşte burada GIT yardımımıza koşuyor. Bu bölümde öğrendiğiniz gibi GIT'in birçok avantajı var. Ve öğrendiklerinizi pekiştirmek için çok güzel bir ödevimiz var.
-- GitHub'ta bir repo açıp adını "kodluyoruzilkrepo" koyun.
-- Reponuzu public olarak oluşturun ki biz de daha sonradan görebilelim.
-- Description kısmına "Kodluyoruz Eğitimi kapsamında açtığım ilk repo" yazın.
-* "Add a README file" seçeneğini seçin.
-* "Choose a license" seçeneğini seçip "MIT License" seçeneğini seçin. Lisanslar ile alakalı detaylı bilgi için [Choose a License](https://choosealicense.com/) sitesini ziyaret edebilirsiniz.
-![image](https://raw.githubusercontent.com/Kodluyoruz/taskforce/main/git/odev1/figures/github.png)
-Evet ilk repomuzu oluşturduk. Bundan sonraki adımda oluşturduğumuz repoyu bilgisayarımıza klonlamak olacak.
-* Repoyu açıp Code yazan yeşil butona tıklayın ve oradaki bağlantı ile bilgisayarınıza klonlayın. GIT komutları için [GitHub GIT Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)'i kullanabilirsiniz.
-* Repoyu bilgisayarımıza aldıktan sonra içine README.md adında bir Markdown dosya oluşturun.
-* Markdown içeriği aşağıdaki gibi olacak şekilde düzenleyin. Markdown için önceki konumuza bakabilirsiniz.
-![image](https://raw.githubusercontent.com/Kodluyoruz/taskforce/main/git/odev1/figures/markdown.png)
-**Detaylı bakmak için** [Örnek Readme dosyası](https://github.com/Kodluyoruz/taskforce/blob/main/git/odev1/ornekreadme.md)**nı inceleyebilirsiniz.**
-- Markdown dosyanızın içine projemizin bir resmini koyun.
-- Repomuzun içine bir adet index.html dosyası oluşturun.
-- En sonunda yaptığınız değişiklikleri ekleyin, commitleyin ve gönderin. Bunları yapmayı bilmiyorsanız sizler için oluşturduğumuz için GIT eğitimimizi takip edebilirsiniz.
-Tebrikler, ilk reponuzu oluşturup içinde çeşitli değişiklikler yaptınız!
-* Bundan sonra eğitmenimiz Hakan Yalçınkaya'nın [GitHub](https://github.com/hakanyalcinkaya) hesabına gidip "kodluyoruz-frontend-101-egitimi" adlı reposunu bulun. Bu repoyu forklayarak kendi GitHub hesabınıza alın ve daha sonrasında bilgisayarınıza clonelayıp kaynak dosyaları inceleyin. Hem konu tekrarı yapmış olacaksınız hem de fork işlemi nasıl çalışıyor bunu görmüş olacaksınız!
+2.Big-O gösterimini yazınız.
 
-Hepinize başarılar ve kolay gelsin.
+3.Time Complexity: Average case: Aradığımız sayının ortada olması,Worst case: Aradığımız sayının sonda olması, Best case: Aradığımız sayının dizinin en başında olması.
 
+4.Dizi sıralandıktan sonra 18 sayısı hangi case kapsamına girer? Yazınız.
+
+### Cevaplar
+1 -> 1.aşama [2,27,16,22,18,6] (2 ile 22 yer değiştirdi)
+
+      2.aşama[2,6,16,22,18,27] (6 ile 27)
+
+      3.aşama[2,6,16,18,22,27] (18 ile 22)
+
+      2 -> Big-O gösterimi insertion sortta n elemanlık dizide                                  n+(n-1)+(n-2)+...+1= n.(n+1)/2 den O(n kare) olacağından bizim 6 elemanlı dizinin Big-O gösterimi O(36) dır.
+
+      4-> Dizinin sıralanmış hali [2,6,16,18,22,27] ve aradığımız 18 sayısı ortada olduğundan 18 sayısı average case kapsamına girer.Eğer aradığımız sayı 2 olsaydı bu best case,27 olsaydı worst case kapsamına girerdi.
+
+      Soru : [7,3,5,8,2,9,4,15,6] dizisinin Insertion Sort'a göre ilk 4 adımını yazınız.
+
+      1.adım [2,3,5,8,7,9,4,15,6]
+      2.adım [2,3,4,8,7,9,5,15,6]
+      3.adım [2,3,4,5,7,9,8,15,6]
+      4.adım [2,3,4,5,6,9,8,15,7]
